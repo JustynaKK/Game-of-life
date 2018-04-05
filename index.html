@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let's play</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conway's Game of Life</h1>
+        <section id="game-menu">
+             <form>
+                 <h3>Choose game options:</h3>
+                 <label>Board width:
+                     <input id="sizeX" type="number" min="20" max="100" value="40">
+                 </label>
+
+                 <label>Board height:
+                     <input id="sizeY" type="number" min="20" max="100" value="40">
+                 </label> <br>
+
+                 <label>Initial pattern:
+                     <select class="startOption">
+                         <option>Clear</option>
+                         <option>Random</option>
+                         <option>Glinder</option>
+                         <option>Lightway spaceship</option>
+                         <option>10 Cell Row</option>
+                         <option>Pulsar</option>
+                     </select>
+
+                 </label> <br>
+                <button type="submit" id="submit">Draw board</button>
+            </form>
+        </section>
+
+        <section id="board">
+        </section>
+
+        <section id="game-set">
+            <button id="play">START</button>
+            <button id="pause">STOP</button>
+        </section>
+
+        <section id="game-instructions">
+            <h3>INSTRUCTIONS:</h3>
+            <ol>
+                <li>Set the board width, height and choose initial pattern, then click the button "Draw board". The board
+                    should appear on your screen.</li>
+                <li>Start drawing by clicking cells with your mouse. You can also use the predefined shapes by choosing one of the initial pattern options.</li>
+                <li>To <strong>start</strong> or <strong>stop</strong> Game of Life just click the START/STOP button.</li>
+            </ol>
+        </section>
+
+        <section id="game-description">
+            <h3>GAME DESCRIPTION:</h3>
+
+            <p>The Game of Life (an example of a cellular automaton) is played on a two-dimensional rectangular grid of cells. Each cell can be either alive or dead. The status of each cell changes each turn of the game (also called a generation) depending on the statuses of that cell's 8 neighbors.
+            </p>
+            <p>For each generation the rules are applied simultaneously to every cell on the game board, i.e. births and deaths happen simultaneously. The cell's status in the next generation is determined by a set of rule rules, which are as follows:
+            </p>
+            <ul>
+               <li>Any live cell with fewer than two live neighbors dies, as if caused by underpopulation.</li>
+               <li>Any live cell with more than three live neighbors dies, as if by overcrowding.</li>
+               <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
+               <li>Any dead cell with exactly three live neighbors becomes a live cell.</li>
+           </ul>
+            <p>For more information, visit <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a>.</p>
+        </section>
+
+
+
+    </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #cccccc;
+   ;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+section{
+    margin: 20px 0;
+}
+
+#game-menu {
+    text-align: center;
+}
+
+#game-menu label{
+    display: inline-block;
+    margin: 6px;
+}
+
+#game-menu input{
+    margin-left: 5px;
+    text-align: center;
+}
+
+#game-menu select{
+    margin-left: 5px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+button {
+    background-color: #666;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#board {
+    margin: 20px auto 5px;
+}
+
+#board div {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    float: left;
+}
+
+#board div.live {
+    background-color: #000000;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#board div.live {
+    background: black;
+}
+
+#game-set {
+    display: none;
+    text-align: center;
+}
+
+#game-set button{
+    margin: 10px;
+}
+
+#game-instructions li{
+    padding: 4px 0;
+}
